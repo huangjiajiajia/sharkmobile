@@ -1,0 +1,1269 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SharkMobile Phone Repair</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./sharkmobile.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="./sharkmobile.js"></script>
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <img id="logo" src="./Image/logo.jpeg">
+        <table class="contact" align="right">
+            <tr>
+                <th>Browns Bay</th>
+				<th>&#9993 Email Address</th>
+                <th>&#x260E Phone Number</th>
+            </tr>
+            <tr>
+                <td><b>Branch</b></td>
+				<td>hjy139@gmail.com</td>
+                <td>022-5100661</td>
+            </tr>
+        </table>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#" class="pagelinks" onclick="choosePage(event, 'home')">Home</a>
+                <a href="#" class="pagelinks" onclick="choosePage(event, 'price')">Pricing</a>
+                <a href="#" class="pagelinks" onclick="choosePage(event, 'services')">Services</a>
+                <a href="#" class="pagelinks" onclick="choosePage(event, 'contact')">Contact</a>
+                <a href="#" class="pagelinks" onclick="choosePage(event, 'about')">about</a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <a href="#" class="pagelinks" onclick="choosePage(event, 'home')">Home</a>
+            <a href="#" class="pagelinks" onclick="choosePage(event, 'price')">Pricing</a>
+            <a href="#" class="pagelinks" onclick="choosePage(event, 'services')">Services</a>
+            <a href="#" class="pagelinks" onclick="choosePage(event, 'contact')">Contact</a>
+            <a href="#" class="pagelinks" onclick="choosePage(event, 'about')">about</a>
+            <table class="socialmedia" align="right">
+                <tr>
+                    <th><a href="#" class="fa fa-facebook"></a></th>
+                    <th><a href="#" class="fa fa-instagram"></a></th>
+                    <th><a href="#" class="fa fa-twitter"></a></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        window.onscroll = function () {
+            mfunction()
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function mfunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+
+
+    <div id="home" class="pagecontents"  style="background-color:white; position:relative; top:-16px;">
+        <div class="coin">
+            <div class="w3-content w3-section" style="max-width:100%">
+				<div class="mySlides">
+					<img class="sectionSlides" src="./Image/repairboard.jpg">
+					<div class="s-container">
+						<div class="s-banner">
+							<br>
+							<h1><b>PHONE REPAIR FROM $40</b></h1>
+							<p>We do professional phone screens repair in one hour.</p>
+							<br>
+							<a href="#" class="pagelinks" onclick="choosePage(event, 'price')">View Detail</a>
+						</div>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img class="sectionSlides" src="./Image/repairstick.jpg">
+					<div class="s-container">
+						<div class="s-banner">
+							<br>
+							<h1><b>IPAD REPAIR FROM $40</b></h1>
+							<p>Phone/pad/lattop Battery Repair</p>
+							<br>
+                            <a href="#" class="pagelinks" onclick="choosePage(event, 'price')">View Detail</a>
+						</div>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img class="sectionSlides" src="./Image/repairplace.jpg">
+					<div class="s-container">
+						<div class="s-banner">
+							<br>
+							<h1><b>LATTOP REPAIR FROM $35</b></h1>
+							<p>We do professional lattop repair services</p>
+							<br>
+                            <a href="#" class="pagelinks" onclick="choosePage(event, 'price')">View Detail</a>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000);
+        }
+        </script>
+
+
+        <div style="background-color:white;">
+            <br>
+            <br>
+            <div class="introbox">
+                <div class="intro">
+                    <h2>Most Professional Repair In NewZealand</h2>
+                    <br>
+                    <p>Sharkmobile Tech is an electronic device repair company located in Browns Bay, Auckland. We provide efficient and reliable electronics repair services with the best price to customers.</p>
+                    <br>
+                    <br>
+                    <a href="#" class="detail" onclick="choosePage(event, 'services')">SEE MORE</a>
+                </div>
+                <div class="intro">
+                    <img src="./Image/shop.jpg" alt="Device" height="300">
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+
+
+        <div align="center">
+            <div class="chosen">
+                <br>
+                <h2 style="font-weight:bold;">WHAT YOU INTEREST</h2>
+                <br>
+                <div class="chosen-row">
+                    <div class="chosen-column">
+                        <i class="fa fa-hourglass-half" style="font-size:100px;"></i>
+                        <h3><br>EFFICIENCY</h3>
+                        <p> One hour Quickly Screen Replacement/ Battery Replacement</p>
+                    </div>
+                    <div class="chosen-column">
+                        <i class="fa fa-wrench" style="font-size:100px;"></i>
+                        <h3><br>WARRANTY</h3>
+                        <p>3 Months Warranty for all the Screen Parts. </p>
+                    </div>
+                    <div class="chosen-column">
+                        <i class="fa fa-certificate" style="font-size:100px;"></i>
+                        <h3><br>QUALITY</h3>
+                        <p>Excellent Quality Of Services and Repair Components</p>
+                    </div>
+                    <div class="chosen-column">
+                        <i class="fa fa-dollar" style="font-size:100px;"></i>
+                        <h3><br>PRICE</h3>
+                        <p>We Provide Reasonable Price with High Quality.</p>
+                    </div>
+					<br>
+                </div>
+            </div>
+        </div>
+
+		<div style="background-color:rgb(250,250,250);" align="center">
+			<h1>Best Features</h1>
+			<p>We could fix all issues with 100% guaranteed successful rate.</p>
+			<br>
+			<div class="featurerow">
+				<div class="featurecolumn">
+					<div class="ic">
+						<i class="material-icons" style="font-size:40px; padding:5px;">&#xe90d;</i>
+					</div>
+					<h4>No touch</h4>
+					<p>No touch issue is also a very common logic board problem in Iphone 6 plus, we could fix it in two hours.</p>
+				</div>
+				<div class="featurecolumn">
+					<div class="ic">
+						<i class="fa fa-mobile" style="font-size:50px;"></i>
+					</div>
+					<h4> Back glass repairs</h4>
+					<p>We offer Original back screens for Iphone And Fix it in 2 hours with professsional equitment.</p>
+				</div>
+				<div class="featurecolumn">
+					<div class="ic">
+						<i class="fa fa-lightbulb-o" style="font-size:37px; padding:5px;"></i>
+					</div>
+					<h4>Board Issues</h4>
+                    <p>In IPhone 7/7Plus No audio issus/ No signal issus(signal always researching)...We could fix it in one day.</p>
+				</div>
+				<div class="featurecolumn">
+					<div class="ic">
+						<i class="fa fa-wifi" style="font-size:37px; padding:5px;"></i>
+					</div>
+					<h4>No Services</h4>
+                    <p>No wifi,No Bluetooth, No signal. In No signal issue, It usually shows No Sim Card, No Services or Searching. We could fix it in two hours.</p>
+				</div>
+				<div class="featurecolumn">
+					<div class="ic">
+						<i class="fa fa-battery-0" style="font-size:30px; padding:7px;"></i>
+					</div>
+					<h4>Dead Battery</h4>
+					<p>Original Battery From $40, Getting a new life for your devices.</p>
+				</div>
+				<div class="featurecolumn">
+					<div class="ic">
+						<i class="fa fa-tint" style="font-size:45px; padding:5px;"></i>
+					</div>
+					<h4>Water Damage</h4>
+					<p>Liquid Damage is a common problem in our life. We can fix your water damaged devices with highly guaranteed successful rate</p>
+				</div>
+			</div>
+			<br>
+		</div>
+		
+        <div class="gallery" align="center" style="background-color:white;">
+            <br>
+            <p style="font-size: 40px;">PHOTO AND SAMPLE<br></p>
+            <div class="photos">
+                <img src="./Image/titlebg.jpg" width="350" height="250">
+                <img src="./Image/repair.jpeg" width="350" height="250">
+                <img src="./Image/repairtable.jpg" width="350" height="250">
+            </div>
+            <br>
+            <br>
+            <br>
+            <a href="#" class="photo-link"><i class="fa fa-facebook"></i>&nbsp;&nbsp;SEE MORE ON FACEBOOK</a>
+            <br>
+            <br>
+        </div>
+		<div style="background-color:rgb(250,250,250);" align="center">
+			<br>
+			<p style="font-size:45px;">WHERE WE ARE</p>
+			<br>
+			
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.360995341723!2d174.74639321599247!3d-36.71389047899125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d3b04de656ccf%3A0x77bddd1c8402f9a0!2sSharkMobile+Phone+Repair+Shop+-+iPhone%2C+Samsung%2C+Huawei+repair!5e0!3m2!1sen!2snz!4v1549515669429" width="600" height="300" frameborder="0" align="middle" style="border:0" allowfullscreen></iframe>
+			
+			<br>
+			<br>
+		</div>
+		
+    </div>
+
+    <div id="price" class="pagecontents" style="display:none;  background-color:white;">
+        <div class="pagetitle">
+            <br>
+            <b>Pricing</b>
+            <p style="font-size:16px; color:lightblue;">
+                <a href="#" class="pagelinks" onclick="choosePage(event, 'home')" style="text-decoration:none;">Home</a>
+                / Pricing
+            </p>
+        </div>
+        <br>
+        <div id="info">
+            <p style="text-align:center; font-size:48px;">Find Your Device</p>
+            <div class="tab">
+                <button class="tablinks" onclick="chooseTab(event, 'iphone')">Iphone</button>
+                <button class="tablinks" onclick="chooseTab(event, 'ipad')">Ipad</button>
+                <button class="tablinks" onclick="chooseTab(event, 'macbook')">Macbook</button>
+                <button class="tablinks" onclick="chooseTab(event, 'samsung')">Samsung</button>
+                <button class="tablinks" onclick="chooseTab(event, 'note')">HuaWei</button>
+            </div>
+
+            <div id="bodybox">
+                <div id="bodyinfo">
+                    <div id="iphone" class="tabcontent" style="display:block;">
+                        <div class="box">
+                            <div class="column left">
+                                <img src="./Image/iphone.png" alt="iphone" width="300" height="300">
+                            </div>
+                            <div class="column middle"></div>
+                            <div class="column right">
+                                <p>Broken Phone? No worries! We are approved to carry out repairs and provide replacements. A 90-day guarantee on all Phone screen repairs. 
+                                We are also very professional in hardware issues, We have much experenice in fixing hard wareware issues,
+                                Like No Wifi, Backlike, No Signal, No Bluetooth, No touch and so on.  We could fix these kinds of hardware issues in one days and come with 3-monthe warranty for the motherboard reapirs.
+                                We could fix all issues for your phone, include the problem that can't be repaired by other maintenance shops.
+                                If your phone can not prower on, and you don't know what's the issues for you phone.  No worries! we can do a quick diagnosed for your phone and No fix No fee! </p>
+                            </div>
+                        </div>
+                        <p style="font-size:30px; font-weight: bold;">Pricing</p>
+                        <div style="overflow-x: auto;">
+                            <table class="pricetable">
+                                <tr class="title">
+                                    <th>Fault/Repair</th>
+                                    <th>6</th>
+                                    <th>6P</th>
+                                    <th>6S</th>
+                                    <th>6SP</th>
+                                    <th>7</th>
+                                    <th>7P</th>
+                                    <th>8</th>
+                                    <th>8P</th>
+                                    <th>X</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Screen</th>
+                                    <th>$70*</th>
+                                    <th>$80*</th>
+                                    <th>$80*</th>
+                                    <th>$90*</th>
+                                    <th>$110*</th>
+                                    <th>$130*</th>
+                                    <th>$130*</th>
+                                    <th>$140*</th>
+                                    <th>$280*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Hardware Issue</th>
+                                    <th>$130*</th>
+                                    <th>$130*</th>
+                                    <th>$140*</th>
+                                    <th>$140*</th>
+                                    <th>$160*</th>
+                                    <th>$160*</th>
+                                    <th>$180*</th>
+                                    <th>$180*</th>
+                                    <th>$250*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Logic Board/Mother Board Issue</th>
+                                    <th>$130*</th>
+                                    <th>$130*</th>
+                                    <th>$140*</th>
+                                    <th>$140*</th>
+                                    <th>$160*</th>
+                                    <th>$160*</th>
+                                    <th>$180*</th>
+                                    <th>$180*</th>
+                                    <th>$250*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Lock/Power button</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$50*</th>
+                                    <th>$50*</th>
+                                    <th>$70*</th>
+                                    <th>$70*</th>
+                                    <th>$80*</th>
+                                    <th>$80*</th>
+                                    <th>$100*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Home button</th>
+                                    <th>$50*</th>
+                                    <th>$50*</th>
+                                    <th>$50*</th>
+                                    <th>$50*</th>
+                                    <th>$80*</th>
+                                    <th>$80*</th>
+                                    <th>$80*</th>
+                                    <th>$80*</th>
+                                    <th>*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Battery Replacement</th>
+                                    <th>$50*</th>
+                                    <th>$60*</th>
+                                    <th>$60*</th>
+                                    <th>$70*</th>
+                                    <th>$80*</th>
+                                    <th>$80*</th>
+                                    <th>$80*</th>
+                                    <th>$80*</th>
+                                    <th>$120*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Charging Port</th>
+                                    <th>$50*</th>
+                                    <th>$50*</th>
+                                    <th>$60*</th>
+                                    <th>$60*</th>
+                                    <th>$70*</th>
+                                    <th>$70*</th>
+                                    <th>$80*</th>
+                                    <th>$80*</th>
+                                    <th>$120*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Back Housing</th>
+                                    <th>$70*</th>
+                                    <th>$70*</th>
+                                    <th>$80*</th>
+                                    <th>$80*</th>
+                                    <th>$90*</th>
+                                    <th>$90*</th>
+                                    <th>$120*</th>
+                                    <th>$140*</th>
+                                    <th>$150*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Rear/Front Camera</th>
+                                    <th>$50*</th>
+                                    <th>$60*</th>
+                                    <th>$60*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Wifi Antenna</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>back glass</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <p>* Prices are to only serve as an indicator and are subject to change. </p>
+                    </div>
+                    <div id="ipad" class="tabcontent">
+                        <div class="box">
+                            <div class="column left">
+                                <img src="./Image/ipad.jpg" alt="note" width="300" height="300">
+                            </div>
+                            <div class="column middle"></div>
+                            <div class="column right">
+                                <p>Broken Ipad Screen? No worries, we could fix it on site in Two Hours. Battery replacement will also fix in Two Hours. 
+                                We also provide some special service for your ipad, We can upgrade the storage for your Ipad, 
+                                like 16GB Upgrade to 256G or 512G. Make sure your ipad have biger storage and get a better entertainment experenice in use.
+                                We can fix all the issues for your ipad, like can not charge, no wifi signal, no audio, can not dispaly , no touch and so on. 
+                                </p>
+                            </div>
+                        </div>
+                        <p style="font-size:30px; font-weight: bold;">Pricing</p>
+                        <div style="overflow-x: auto;">
+                            <table class="pricetable">
+                                <tr class="title">
+                                    <th>Fault/Repair</th>
+                                    <th>Pro</th>
+                                    <th>Air 1</th>
+                                    <th>Air 2</th>
+                                    <th>Mini 1</th>
+                                    <th>Mini 2</th>
+                                    <th>Mini 3</th>
+                                    <th>Mini 4</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Screen</th>
+                                    <th>Need quote</th>
+                                    <th>$119*</th>
+                                    <th>$229*</th>
+                                    <th>$119*</th>
+                                    <th>$119*</th>
+                                    <th>$129*</th>
+                                    <th>$259*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Hardware Issue</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Logic Board/Mother Board Issue</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Lock/Power button</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Home button</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Battery Replacement</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Charging Port</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Back Housing</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Rear/Front Camera</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Wifi Antenna</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Unlock</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <p>* Prices are to only serve as an indicator and are subject to change. </p>
+                    </div>
+
+                    <div id="macbook" class="tabcontent">
+                        <div class="box">
+                            <div class="column left">
+                                <img src="./Image/macbook.jpg" alt="macbook" width="300" height="300">
+                            </div>
+                            <div class="column middle"></div>
+                            <div class="column right">
+                                <p>Broken Lattop Screen? No Worries, We could fix it with original part. We could fix all issues for your lattop, even your lattop can not power on. 
+                                We have 6 years experience to fix lattop. We have a highy-tech technical help you solve the problems. Our company not only can replace the screen, 
+                                keyboard, Battery, but also could fix the board for your lattop. After repairing, We will do a full diagnosed for your lattop, make sure your lattop
+                                all functions are working in perfect status. We also fix other bands of computers besides Macbook. Choosing us is your wisest choice.</p>
+                            </div>
+                        </div>
+                        <p style="font-size:30px; font-weight: bold;">Pricing</p>
+                        <div>
+                            <table class="pricetable">
+                                <tr class="title">
+                                    <th>Fault/Repair</th>
+                                    <th>Pro Unibody</th>
+                                    <th>Pro Retina</th>
+                                    <th>Air 11</th>
+                                    <th>Air 13</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Battery Replacement</th>
+                                    <th>$170*</th>
+                                    <th>$180*</th>
+                                    <th>$180*</th>
+                                    <th>$180*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>LCD Replacement</th>
+                                    <th>$360*</th>
+                                    <th>$750*</th>
+                                    <th>$550*</th>
+                                    <th>$750*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Keyboard Replacement</th>
+                                    <th>$230*</th>
+                                    <th>$380*</th>
+                                    <th>$230*</th>
+                                    <th>$230*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>SSD Replacement</th>
+                                    <th>-</th>
+                                    <th>$540*</th>
+                                    <th>$540*</th>
+                                    <th>$540*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Screen Glass Replacement</th>
+                                    <th>$240*</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>HDD Replacement</th>
+                                    <th>$220*</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>RAM Replacement</th>
+                                    <th>$180*</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Trackpad Replacement</th>
+                                    <th>$220*</th>
+                                    <th>$220*</th>
+                                    <th>$220*</th>
+                                    <th>$220*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Assessment fee</th>
+                                    <th>$94.5*</th>
+                                    <th>$94.5*</th>
+                                    <th>$94.5*</th>
+                                    <th>$94.5*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Data Recovery</th>
+                                    <th>$126*</th>
+                                    <th>$126*</th>
+                                    <th>$126*</th>
+                                    <th>$126*</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <p>* Prices are to only serve as an indicator and are subject to change. </p>
+                    </div>
+
+                    <div id="samsung" class="tabcontent">
+                        <div class="box">
+                            <div class="column left">
+                                <img src="./Image/samsung.jpg" alt="samsung" width="300" height="300">
+                            </div>
+                            <div class="column middle"></div>
+                            <div class="column right">
+                                <p>Crack Scrren for your Samsung? We could fix your samsung screen in Two hours come with oringal screen and reasonable prices. 
+                                Battery replacment from $40 and within 1 hour to fix it! Audio issue, No charge issue, No dispaly issue. Any other issues just come to our shop
+                                to ask our technicans, we will help you solve all your phone's problems. </p>
+                            </div>
+                        </div>
+                        <p style="font-size:30px; font-weight: bold;">Pricing</p>
+                        <div style="overflow-x: auto;">
+                            <table class="pricetable">
+                                <tr class="title">
+                                    <th>Fault/Repair</th>
+                                    <th>S5</th>
+                                    <th>S6</th>
+                                    <th>S6 Edge</th>
+                                    <th>S6 Edge Plus</th>
+                                    <th>S7</th>
+                                    <th>S7 Edge</th>
+                                    <th>S8</th>
+                                    <th>S8 Plus</th>
+                                    <th>S9</th>
+                                    <th>S9 Plus</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Screen</th>
+                                    <th>$70*</th>
+                                    <th>$139*</th>
+                                    <th>$179*</th>
+                                    <th>$200*</th>
+                                    <th>$149*</th>
+                                    <th>$219*</th>
+                                    <th>$239*</th>
+                                    <th>$289*</th>
+                                    <th>$239*</th>
+                                    <th>$330*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Hardware Issue</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Logic Board/Mother Board Issue</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Lock/Power button</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Home button</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Battery Replacement</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Charging Port</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Back Housing</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Rear/Front Camera</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Wifi Antenna</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Unlock</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <p>* Prices are to only serve as an indicator and are subject to change. </p>
+                    </div>
+
+                    <div id="note" class="tabcontent">
+                        <div class="box">
+                            <div class="column left">
+                                <img src="./Image/note.jpg" alt="note" width="300" height="300">
+                            </div>
+                            <div class="column middle"></div>
+                            <div class="column right">
+                                <p>
+                                    Crack Screen for your Huawei Phone? We are specilize in repairing Huawei Phone.
+                                    We have many oringal Huawei screen on site. Like, Huawei P40,40pro, P30pro, P30,Mate 40, Mate 40Pro,
+                                    Nova 3i.. We could fix it within 2 hours. We also have many components on site, such as charging port and
+                                    battery. We can fix all your Huawei phones issue, like, Can not turn on, water damage, can not charge,
+                                    crack front/back scrren, No Wifi, No sound.</p>
+                                Choosing us is your wisest choice, we sincerely for your service,
+                                    you are welcome to the arrival!
+                                </p>
+                            </div>
+                        </div>
+                        <p style="font-size:30px; font-weight: bold;">Pricing</p>
+                        <div style="overflow-x: auto;">
+                            <table class="pricetable">
+                                <tr class="title">
+                                    <th>Fault/Repair</th>
+                                    <th>Note 2</th>
+                                    <th>Note 3</th>
+                                    <th>Note 4</th>
+                                    <th>Note 5</th>
+                                    <th>Note 8</th>
+                                    <th>Note 9</th>
+                                    <th>J7 Prime</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Screen</th>
+                                    <th>$99*</th>
+                                    <th>$119*</th>
+                                    <th>$179*</th>
+                                    <th>$199*</th>
+                                    <th>$280*</th>
+                                    <th>$380*</th>
+                                    <th>$119*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Hardware Issue</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Logic Board/Mother Board Issue</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                    <th>$150*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Lock/Power button</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Home button</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Battery Replacement</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Charging Port</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Back Housing</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                    <th>$20*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Rear/Front Camera</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="even">
+                                    <th>Wifi Antenna</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                    <th>$40*</th>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Unlock</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                    <th>$100*</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <p>* Prices are to only serve as an indicator and are subject to change. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<br>
+		<br>
+    </div>
+
+    <div id="services" class="pagecontents" style="display: none;  background-color:white;">
+        <div class="pagetitle">
+            <br>
+            <b>Services</b>
+            <p style="font-size:16px; color:lightblue;">
+                <a href="#" class="pagelinks" onclick="choosePage(event, 'home')" style="text-decoration:none;">Home</a>
+                / Services
+            </p>
+        </div>
+        <br>
+        <div class="services-row" align="center">
+            <br>
+            <div class="services-info services-info-left">
+                <table id="services-type">
+                    <tr>
+                        <td><a href="#phoneservice" class="services-link" style="padding: 10px 22px 10px 15px;"><i class="fa fa-mobile" style="font-size:31px;"></i>&nbsp;&nbsp;Phone Repair</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#tabletservice" class="services-link" style="padding: 10px 22px 10px 15px;"><i class="fa fa-tablet"></i>&nbsp;&nbsp;Tablet Repair</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#laptopservice" class="services-link" style="padding: 10px 10px 10px 15px;"><i class="fa fa-laptop" style="font-size:17px;"></i>&nbsp;&nbsp;Laptop Repair</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#otherservice" class="services-link" style="padding: 10px 22px 10px 15px;"><i class="fa fa-television" style="font-size:18px;"></i>&nbsp;&nbsp;Other Repair</a></td>
+                    </tr>
+                </table>
+				<br>
+				<br>
+				
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsharkmobile.co.nz%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+				
+            </div>
+            <div class="services-info services-info-right" align="left">
+
+                <h2 style="font-weight:bold;">Best Repair Services In NewZealand</h2>
+                <p>
+                    At Sharkmobile, we repair a large range of device including laptop and desktop, and we can fix any problems
+                    on hardware and software which will make your device work again as a new device after repairment.
+                    Also, we offer other services like setup and unlock services, and our technicians are skillful as they have many experience working on the major brands
+                    of device such as Apple and Samsung. If you have any questions on our services, just call 022-5100661 to find out more.
+                </p>
+                <br>
+                <h3 style="font-weight:bold;">Inspection And Quote</h3>
+                <p>
+                    If you like to get a quote or inspection, please come to our shop on Browns Bay as we need to inspect the device physically before quotation.
+                    We offer free inspection and quotation service. If we discover any other problems on the device during repairment,
+                    We will ask for your agreement before continue the repairment. We can also provide the damage report for your services.
+                </p>
+                <div id="phoneservice"></div>
+                <br>
+
+                <h3 style="font-weight:bold;">Major Brands Of Devices We Repair</h3>
+                <p>&nbsp;&bull;&nbsp;Apple - all models of Iphone, Ipad, Macbook</p>
+                <p>&nbsp;&bull;&nbsp;Samsung - all models of smartphone, tablet and laptop</p>
+                <p>&nbsp;&bull;&nbsp;Huawei - all models of smartphone</p>
+                <p>&nbsp;&bull;&nbsp;Oppo - all models of smartphone</p>
+                <p>&nbsp;&bull;&nbsp;Mi - all models of smartphone</p>
+                <p>&nbsp;&bull;&nbsp;Lenovo - all models of computer</p>
+                <p>&nbsp;&bull;&nbsp;Acer - all models of  computer</p>
+                <p>&nbsp;&bull;&nbsp;Hp,Asus - all models of  computer</p>
+
+                <br>
+                <br>
+                <h2 style="font-weight:bold;">Phone Repairment</h2>
+                <p>
+                    At sharkmobile, we offer a fast, efficient and effective phone repair services
+                    as we know the importance of phone to every people,
+                    which means if you use our phone repair service, we will return your phone within
+                    a shortest period of time with the best quality of repairment.
+                    We are the most professional team in New Zealand, we could fix all issues for your phone!
+                    You are welcome to the arrival!
+                </p>
+                <div id="tabletservice"></div>
+                <br>
+                <h3 style="font-weight:bold;">Major Repair Issue</h3>
+                <p>&nbsp;&bull;&nbsp;Hardware Issue</p>
+                <p>&nbsp;&bull;&nbsp;Screen Replacement</p>
+                <p>&nbsp;&bull;&nbsp;Logic Or Mother Board Issue</p>
+                <p>&nbsp;&bull;&nbsp;Battery Replacement</p>
+                <p>&nbsp;&bull;&nbsp;Button Issue</p>
+                <p>&nbsp;&bull;&nbsp;Water Damaged</p>
+                <p>&nbsp;&bull;&nbsp;Charging Port Issue</p>
+
+                <br>
+                <br>
+
+                <h2 style="font-weight:bold;">Tablet Repairment</h2>
+                <p>
+                    At sharkmobile, we offer an efficient and reasonalbe prices tablet repair services, 
+                    All kinds of problems for your tablet, we could fix it. We have many conponents in stock, like, we could fix your ipad scrren in 2 hours and 
+                    Return your tablet at the same day. We can also fix other bands for your tablet, such as,Surface, Samsung pad, Huawei pad, and lenovo ideapad.
+                    Please feel free ask to questions!
+                    
+                </p>
+                <div id="laptopservice"></div>
+                <br>
+                <h3 style="font-weight:bold;">Major Repair Issue</h3>
+                <p>&nbsp;&bull;&nbsp;Software Issue</p>
+                <p>&nbsp;&bull;&nbsp;Screen replacement</p>
+                <p>&nbsp;&bull;&nbsp;Hardware Issue</p>
+                <p>&nbsp;&bull;&nbsp;Logic Or Mother Board Issue</p>
+                <p>&nbsp;&bull;&nbsp;Battery Replacement</p>
+                <p>&nbsp;&bull;&nbsp;Button Issue</p>
+                <p>&nbsp;&bull;&nbsp;Water Damaged</p>
+                <p>&nbsp;&bull;&nbsp;Charging Port Issue</p>
+
+                <br>
+
+                <h2 style="font-weight:bold;">Laptop Repairment</h2>
+                <p>
+                    At sharkmobile, we offer a reliable and efficient laptop repair services. Our complany has skillful and professional team and all of technicians have over
+                    5 years repair experience in laptop repair services. No power on, NO display, No wifi and any issues, we could fix it in highly success rate!
+                    Choosing us is your wisest choice!
+
+                </p>
+                <div id="otherservice"></div>
+                <br>
+                <h3 style="font-weight:bold;">Major Repair Issue</h3>
+                <p>&nbsp;&bull;&nbsp;Software Issue</p>
+                <p>&nbsp;&bull;&nbsp;Hardware Issue</p>
+                <p>&nbsp;&bull;&nbsp;Keyboard Replacement</p>
+                <p>&nbsp;&bull;&nbsp;LCD Replacement</p>
+                <p>&nbsp;&bull;&nbsp;Battery Replacement</p>
+                <p>&nbsp;&bull;&nbsp;SSD Replacement</p>
+                <p>&nbsp;&bull;&nbsp;Data Recovery</p>
+                <p>&nbsp;&bull;&nbsp;Water Damaged</p>
+                <p>&nbsp;&bull;&nbsp;Damage Report</p>
+
+
+                <br>
+
+                <h2 style="font-weight:bold;">Other Repairment</h2>
+                <p>At sharkmobile, we offer a reliable and efficient electrionic devices repair services. Please feel free ask questions! 
+                we sincerely for your service. </p>
+
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="pagecontents" style="display: none;  background-color:white;">
+        <div class="pagetitle">
+            <br>
+            <b>About this project</b>
+            <p style="font-size:16px; color:lightblue;">
+                <a href="#" class="pagelinks" onclick="choosePage(event, 'home')" style="text-decoration:none;">Home</a>
+                / about
+            </p>
+        </div>
+        <br>
+        <div class="about-row">
+            <div class="coact-info about-info-left">
+                <div style="background-color:rgb(250,250,250);" align="left">
+                <h2 style="font-weight:bold;">References for the material used for this project</h2>
+
+
+                    <li>
+                        All images are use my own.
+                    </li>
+
+                    <li>
+                        Icons used from Font Awesome http://fontawesome.io/
+                    </li>
+                    <li>
+                        Fonts obtained from Google Fonts CDN
+                    </li>
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div id="contact" class="pagecontents" style="display: none;  background-color:white;">
+        <div class="pagetitle">
+            <br>
+            <b>Contact</b>
+            <p style="font-size:16px; color:lightblue;">
+                <a href="#" class="pagelinks" onclick="choosePage(event, 'home')" style="text-decoration:none;">Home</a>
+                / Contact
+            </p>
+        </div>
+        <br>
+        <div class="contact-row">
+            <div class="contact-info contact-info-left">
+                <h2 style="font-weight:bold;">Repair Quotes And Questions</h2>
+                <p>Do you want to know how much would it cost to repair your device such as phone, tablet, laptop or other device? Or do you want to find out what problem is on your device? Just find us sharkmobile and we can help!!</p>
+                <p>For any repair quotes and questions, please call us on 022-5100661, or you can visit our store in Browns Bay. You can also visit our facebook page and ask questions, we will respond as soon as possible.</p>
+                <br>
+                <p style="font-size:18px; font-weight:bold;">Opening hours</p>
+                <p>Monday: 10:00am - 6:00pm</p>
+                <p>Tuesday: 10:00am - 6:00pm</p>
+                <p>Wednesday: 10:00am - 6:00pm</p>
+                <p>Thrusday: 10:00am - 6:00pm</p>
+                <p>Friday: 10:00am - 6:00pm</p>
+                <p>Saturday: 10:30am - 6:30pm</p>
+                <p>Sunday: 10:30am - 6:30pm</p>
+            </div>
+            <div class="contact-info contact-info-right">
+                <h2 style="font-weight:bold;">Contact</h2>
+                <p style="font-weight:bold;">Browns Bay Branch</p>
+                <p>&#x260E    022 5100661</p>
+                <p>&#9993    hjy139@gmail.com</p>
+                <p><b style="font-size:20px;">&#x2302;</b>    105 clyde rd, Browns Bay, Auckland 0630</p>
+				<br>
+				<br>
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsharkmobile.co.nz%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+				<br>
+            </div>
+        </div>
+		<br>
+		<br>
+        <div style="background-color:rgb(250,250,250);" align="center">
+			<br>
+			<p style="font-size:45px;">WHERE WE ARE</p>
+			<br>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.360995341723!2d174.74639321599247!3d-36.71389047899125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d3b04de656ccf%3A0x77bddd1c8402f9a0!2sSharkMobile+Phone+Repair+Shop+-+iPhone%2C+Samsung%2C+Huawei+repair!5e0!3m2!1sen!2snz!4v1549515669429" width="600" height="300" frameborder="0" align="middle" style="border:0" allowfullscreen></iframe>
+			</div>
+			<br>
+			<br>
+		</div>
+    </div>
+    <br>
+
+
+
+
+    <div class="footer">
+        <p align="center">Copyright&copy; 2021 Shark Mobile All Rights Reserved.</p>
+		<br>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
